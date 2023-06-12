@@ -1,0 +1,13 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <div class="field">
+    <%= f.label :commenter %><br />
+    <%= f.text_field :commenter, :class => "rounded-lg" %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body, :class => "rounded-lg" %>
+  </div>
+  <div class="actions">
+    <%= f.submit :class => "rounded-[10px] bg-indigo-400 hover:bg-indigo-300 px-3 py-2" %>
+  </div>
+<% end %>

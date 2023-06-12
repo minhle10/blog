@@ -1,17 +1,21 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Name:</strong>
-    <%= post.name %>
-  </p>
+<div id="<%= dom_id post %>" class="bg-slate-300	px-4 py-1 rounded-lg">
+  <h3>
+    <%= post.title %>
+  </h3>
 
   <p>
-    <strong>Title:</strong>
-    <%= post.title %>
+    <strong>Author:</strong>
+    <%= post.name %>
   </p>
 
   <p>
     <strong>Content:</strong>
     <%= post.content %>
+  </p>
+
+  <p>
+    <b>Tags:</b>
+    <%= join_tags(post) %>
   </p>
 
 </div>

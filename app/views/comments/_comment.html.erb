@@ -1,0 +1,19 @@
+<div class="bg-indigo-200	px-3 py-1 rounded-lg">
+  <p>
+    <b class="my-10">Commenter:</b>
+    <%= comment.commenter %>
+  </p>
+  
+  <p>
+    <b>Comment:</b>
+    <%= comment.body %>
+  </p>
+
+  <p>
+</div>
+
+    <%= button_to 'Destroy Comment', [comment.post, comment],
+                :confirm => 'Are you sure?',
+                :method => :delete,
+                :class => "rounded-[10px] bg-red-500 hover:bg-red-400 px-3 py-2 mt-5"  %>
+</p>
